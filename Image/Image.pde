@@ -2,12 +2,24 @@
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
-boolean nightMode=true;
+boolean nightMode=false;
 //
 size(800, 600); //Landscape
 //Copy Display Algorithm
 appWidth = width;
 appHeight = height;
+//
+//Aspect Ratio Calculations
+//Obi-wan-star-wars-jedi-23864621-800-600.jpg
+int pickWidth = 800;
+int pickHeight = 600;
+//Image Orientation: Landscape, Portrait, square
+if( pickWidth >= pickHeight ) {//True if Landscape or Square
+LargerDimension = pickWidth;
+smallerDimension = pickHeight;
+widthLarger = true;
+} else{//False if Portrait
+}
 //
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
