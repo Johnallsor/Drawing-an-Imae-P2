@@ -31,6 +31,9 @@ if ( widthLarger == true ) imageHeightRatio = smallerDimension / LargerDimension
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / LargerDimension;
 if ( heightLarger == true ) imageHeightRatio = LargerDimension / LargerDimension;
 //
+pickWidthAdjusted = ;
+pickHeightAdjusted = ;
+//
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
 backgroundImageX = appWidth*0;
