@@ -1,5 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
+float smallerDimension, LargerDimension;
+boolean widthLarger=false, heightLarger=false;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
 boolean nightMode=false;
@@ -19,6 +21,9 @@ LargerDimension = pickWidth;
 smallerDimension = pickHeight;
 widthLarger = true;
 } else{//False if Portrait
+LargerDimension = pickHeight;
+smallerDimension = pickWidth;
+widthLarger = true;
 }
 //
 //Population
