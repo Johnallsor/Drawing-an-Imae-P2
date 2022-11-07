@@ -26,6 +26,11 @@ smallerDimension = pickWidth;
 widthLarger = true;
 }
 //
+if ( widthLarger == true ) imageWidthRatio = LargerDimension / LargerDimension;
+if ( widthLarger == true ) imageHeightRatio = smallerDimension / LargerDimension;
+if ( heightLarger == true ) imageWidthRatio = smallerDimension / LargerDimension;
+if ( heightLarger == true ) imageHeightRatio = LargerDimension / LargerDimension;
+//
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
 backgroundImageX = appWidth*0;
