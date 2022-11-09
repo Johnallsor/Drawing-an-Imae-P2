@@ -70,10 +70,15 @@ void setup()
   //Rectangular Layout and Image Drawing to CANVAS
   //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
+  //Background Iage mus be single exectued code
+  if (nightMode == false) tint(255, 0)
 }//End setup
 //
 void draw()
 {
+  if (nightMode == true) {
+    //RGB tint() works in draw()
+    tint (64, 64, 40); //RGB: Night Mode
   if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
   if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
   //
@@ -84,6 +89,11 @@ void draw()
 void keyPressed() {
 }//End keyPressed
 void mousePressed() {
+ if(mouseButton == LEFT) {
+ nightMode = true;
+ tint (255, 50); //RGB: Night Mode
+ image( pic, backgroundImagex, backgroundImagey, picWidthAdjusted
+ if ( mouseButton == RIGHT) nightMode = false;
 }//End mousePressed
 //
 //End Main Process
